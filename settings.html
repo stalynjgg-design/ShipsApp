@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090D18">
+
+    <title>Configuración - ShipsApp</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/liquid-glass.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+
+    <main class="settings-screen">
+
+        <header class="page-header">
+
+            <a href="profile.html" class="back-button">←</a>
+
+            <h1>Configuración</h1>
+
+        </header>
+
+        <section class="settings-content">
+
+            <div class="settings-heading">
+                <h2>Personalización</h2>
+            </div>
+
+            <section class="settings-card glass">
+
+                <div class="setting-item">
+
+                    <span>🎨</span>
+
+                    <div class="setting-info">
+                        <strong>Apariencia</strong>
+                        <small>Personaliza el aspecto de ShipsApp</small>
+                    </div>
+
+                    <select id="themeSelect">
+                        <option value="dark">Oscuro</option>
+                        <option value="light">Claro</option>
+                        <option value="system">Sistema</option>
+                    </select>
+
+                </div>
+
+            </section>
+
+            <div class="settings-heading">
+                <h2>Notificaciones</h2>
+            </div>
+
+            <section class="settings-card glass">
+
+                <label class="setting-item">
+
+                    <span>🔔</span>
+
+                    <div class="setting-info">
+                        <strong>Notificaciones</strong>
+                        <small>Recibir avisos de mensajes</small>
+                    </div>
+
+                    <input type="checkbox" id="notificationsToggle" checked>
+
+                </label>
+
+                <label class="setting-item">
+
+                    <span>🔊</span>
+
+                    <div class="setting-info">
+                        <strong>Sonidos</strong>
+                        <small>Sonidos de mensajes y llamadas</small>
+                    </div>
+
+                    <input type="checkbox" id="soundsToggle" checked>
+
+                </label>
+
+            </section>
+
+            <div class="settings-heading">
+                <h2>Privacidad y seguridad</h2>
+            </div>
+
+            <section class="settings-card glass">
+
+                <a href="#" class="setting-item" id="privacyButton">
+
+                    <span>🛡️</span>
+
+                    <div class="setting-info">
+                        <strong>Privacidad</strong>
+                        <small>Controla quién puede contactarte</small>
+                    </div>
+
+                    <span>›</span>
+
+                </a>
+
+                <a href="#" class="setting-item" id="securityButton">
+
+                    <span>🔐</span>
+
+                    <div class="setting-info">
+                        <strong>Seguridad</strong>
+                        <small>Protege tu cuenta</small>
+                    </div>
+
+                    <span>›</span>
+
+                </a>
+
+            </section>
+
+            <div class="settings-heading">
+                <h2>Acerca de</h2>
+            </div>
+
+            <section class="settings-card glass">
+
+                <div class="setting-item">
+
+                    <span>💬</span>
+
+                    <div class="setting-info">
+                        <strong>ShipsApp</strong>
+                        <small>Connect your world</small>
+                    </div>
+
+                    <span>v1.0.0</span>
+
+                </div>
+
+            </section>
+
+            <button
+                class="glass-button logout-option"
+                id="logoutButton">
+                Cerrar sesión
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="../scripts/settings.js"></script>
+
+</body>
+</html>

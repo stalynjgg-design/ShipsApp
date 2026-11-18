@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090D18">
+
+    <title>Conversación - ShipsApp</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/liquid-glass.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+
+    <main class="chat-screen">
+
+        <header class="chat-header glass">
+
+            <a href="chats.html" class="back-button">
+                ←
+            </a>
+
+            <div class="contact-avatar" id="contactAvatar">
+                👤
+            </div>
+
+            <div class="contact-info">
+                <h2 id="contactName">Contacto</h2>
+                <p id="contactStatus">Desconectado</p>
+            </div>
+
+            <div class="chat-actions">
+
+                <button id="voiceCallButton" aria-label="Llamada">
+                    📞
+                </button>
+
+                <button id="videoCallButton" aria-label="Videollamada">
+                    📹
+                </button>
+
+            </div>
+
+        </header>
+
+        <section class="messages-container" id="messagesContainer">
+
+            <div class="chat-date">
+                Hoy
+            </div>
+
+            <div class="empty-chat-message" id="emptyChatMessage">
+                <span>💬</span>
+                <p>¡Esta conversación está lista!</p>
+                <small>Envía tu primer mensaje.</small>
+            </div>
+
+        </section>
+
+        <form class="message-composer" id="messageForm">
+
+            <div class="attachment-wrapper">
+
+                <button type="button" id="attachmentButton"
+                    aria-label="Adjuntar archivo">
+                    +
+                </button>
+
+                <input
+                    type="file"
+                    id="mediaInput"
+                    accept="image/*,video/*"
+                    hidden
+                >
+
+                <input
+                    type="file"
+                    id="audioInput"
+                    accept="audio/*"
+                    hidden
+                >
+
+            </div>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Escribe un mensaje..."
+                autocomplete="off"
+            >
+
+            <button type="button" id="recordAudioButton"
+                aria-label="Grabar audio">
+                🎤
+            </button>
+
+            <button type="submit" id="sendMessageButton"
+                aria-label="Enviar mensaje">
+                ➤
+            </button>
+
+        </form>
+
+    </main>
+
+    <script src="../scripts/chat.js"></script>
+
+</body>
+</html>

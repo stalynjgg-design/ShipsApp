@@ -1,0 +1,62 @@
+
+/* =================================
+   SHIPSAPP - THEMES
+================================= */
+
+:root,
+[data-theme="dark"] {
+    --bg-primary: #090D18;
+    --bg-secondary: #111827;
+    --bg-card: rgba(255,255,255,0.06);
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #A5AEC0;
+
+    --accent: #7C6CFF;
+    --accent-secondary: #36CFFF;
+
+    --border: rgba(255,255,255,0.12);
+}
+
+[data-theme="light"] {
+    --bg-primary: #F3F5FA;
+    --bg-secondary: #FFFFFF;
+    --bg-card: rgba(255,255,255,0.75);
+
+    --text-primary: #172033;
+    --text-secondary: #647087;
+
+    --accent: #6654E8;
+    --accent-secondary: #149BCB;
+
+    --border: rgba(0,0,0,0.10);
+}
+
+[data-theme="light"] body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .glass {
+    background: rgba(255,255,255,0.75);
+    border-color: var(--border);
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+    color: var(--text-primary);
+}
+
+[data-theme="light"] .bottom-navigation {
+    background: rgba(255,255,255,0.92);
+    border-color: var(--border);
+}
+
+[data-theme="light"] .nav-item {
+    color: var(--text-secondary);
+}
+
+[data-theme="light"] .nav-item.active {
+    color: var(--accent);
+}

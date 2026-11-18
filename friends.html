@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090D18">
+
+    <title>Amigos - ShipsApp</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/liquid-glass.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+
+    <main class="friends-screen">
+
+        <header class="page-header">
+            <a href="chats.html" class="back-button">←</a>
+            <h1>Amigos</h1>
+
+            <button class="icon-button" id="addFriendButton">
+                +
+            </button>
+        </header>
+
+        <section class="friends-content">
+
+            <div class="friends-intro">
+                <h2>Conecta con personas</h2>
+                <p>Encuentra amigos y comienza nuevas conversaciones.</p>
+            </div>
+
+            <div class="search-box">
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="friendSearch"
+                    placeholder="Buscar por nombre de usuario..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <div id="searchResults" class="friends-list">
+
+                <p class="empty-message">
+                    Busca un usuario para encontrar amigos.
+                </p>
+
+            </div>
+
+            <section class="friend-section">
+
+                <div class="section-heading">
+                    <h2>Solicitudes recibidas</h2>
+
+                    <span id="requestCount">0</span>
+                </div>
+
+                <div id="friendRequests" class="friends-list">
+
+                    <p class="empty-message">
+                        No tienes solicitudes pendientes.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section class="friend-section">
+
+                <div class="section-heading">
+                    <h2>Mis amigos</h2>
+
+                    <span id="friendsCount">0</span>
+                </div>
+
+                <div id="friendsList" class="friends-list">
+
+                    <div class="empty-friends">
+
+                        <div class="empty-icon">👥</div>
+
+                        <h3>Aún no tienes amigos</h3>
+
+                        <p>
+                            Agrega personas para comenzar a conversar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <nav class="bottom-navigation">
+
+            <a href="chats.html" class="nav-item">
+                <span>💬</span>
+                <small>Chats</small>
+            </a>
+
+            <a href="friends.html" class="nav-item active">
+                <span>👥</span>
+                <small>Amigos</small>
+            </a>
+
+            <a href="groups.html" class="nav-item">
+                <span>🌐</span>
+                <small>Grupos</small>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <span>👤</span>
+                <small>Perfil</small>
+            </a>
+
+        </nav>
+
+    </main>
+
+    <script src="../scripts/friends.js"></script>
+
+</body>
+</html>

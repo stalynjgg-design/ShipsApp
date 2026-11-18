@@ -1,0 +1,92 @@
+
+/* =================================
+   SHIPSAPP - ANIMATIONS
+================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(124,108,255,0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(54,207,255,0.4);
+    }
+}
+
+.welcome-content {
+    animation: fadeIn 0.8s ease;
+}
+
+.welcome-card {
+    animation: slideUp 0.7s ease;
+}
+
+.app-logo {
+    animation: float 4s ease-in-out infinite;
+}
+
+.online-indicator {
+    animation: pulse 2s infinite;
+}
+
+.glass-button,
+.liquid-button {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.modal-content {
+    animation: slideUp 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,85 @@
+
+/* =================================
+   SHIPSAPP - RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    .welcome-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .welcome-card {
+        padding: 24px;
+    }
+
+    .auth-container {
+        width: 100%;
+        max-width: 450px;
+        margin: 20px;
+    }
+
+    .chats-content,
+    .friends-content,
+    .groups-content,
+    .profile-content,
+    .settings-content {
+        padding: 15px;
+        padding-bottom: 100px;
+    }
+
+    .chat-header {
+        padding: 12px;
+    }
+
+    .message-composer {
+        padding: 10px;
+    }
+
+    .bottom-navigation {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .auth-container {
+        max-width: 480px;
+        margin: auto;
+    }
+
+    .chats-content,
+    .friends-content,
+    .groups-content,
+    .profile-content,
+    .settings-content {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .bottom-navigation {
+        max-width: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px 20px 0 0;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .glass-button {
+        padding: 12px;
+    }
+
+    .nav-item small {
+        font-size: 10px;
+    }
+
+}

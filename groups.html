@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090D18">
+
+    <title>Grupos - ShipsApp</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/liquid-glass.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+
+    <main class="groups-screen">
+
+        <header class="page-header">
+
+            <a href="chats.html" class="back-button">←</a>
+
+            <h1>Mis grupos</h1>
+
+            <button
+                class="icon-button"
+                id="createGroupButton"
+                aria-label="Crear grupo">
+                +
+            </button>
+
+        </header>
+
+        <section class="groups-content">
+
+            <div class="groups-intro">
+                <h2>Comunidades ShipsApp</h2>
+
+                <p>
+                    Comparte, conversa y conecta
+                    con varias personas al mismo tiempo.
+                </p>
+            </div>
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="groupSearch"
+                    placeholder="Buscar mis grupos..."
+                >
+
+            </div>
+
+            <div class="groups-list" id="groupsList">
+
+                <div class="empty-groups">
+
+                    <div class="empty-icon">🌐</div>
+
+                    <h3>¡Crea tu primer grupo!</h3>
+
+                    <p>
+                        Reúne a tus amigos en un mismo lugar
+                        y comienza a compartir.
+                    </p>
+
+                    <button
+                        class="glass-button primary"
+                        id="emptyCreateGroupButton">
+                        Crear grupo
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Ventana para crear grupos -->
+
+        <div class="modal-overlay" id="createGroupModal" hidden>
+
+            <div class="modal-content glass">
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    id="closeGroupModal">
+                    ✕
+                </button>
+
+                <h2>Crear un grupo</h2>
+
+                <p>
+                    Personaliza tu nuevo grupo.
+                </p>
+
+                <form id="createGroupForm">
+
+                    <div class="profile-upload">
+
+                        <label for="groupPhoto">
+                            <div class="photo-preview" id="groupPhotoPreview">
+                                📷
+                            </div>
+
+                            <p>Foto del grupo</p>
+                        </label>
+
+                        <input
+                            type="file"
+                            id="groupPhoto"
+                            accept="image/*"
+                            hidden
+                        >
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="groupName">
+                            Nombre del grupo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="groupName"
+                            maxlength="50"
+                            placeholder="Ej. Amigos"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="groupDescription">
+                            Descripción
+                        </label>
+
+                        <textarea
+                            id="groupDescription"
+                            maxlength="200"
+                            placeholder="Describe tu grupo..."
+                        ></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="glass-button primary">
+                        Crear grupo
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <nav class="bottom-navigation">
+
+            <a href="chats.html" class="nav-item">
+                <span>💬</span>
+                <small>Chats</small>
+            </a>
+
+            <a href="friends.html" class="nav-item">
+                <span>👥</span>
+                <small>Amigos</small>
+            </a>
+
+            <a href="groups.html" class="nav-item active">
+                <span>🌐</span>
+                <small>Grupos</small>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <span>👤</span>
+                <small>Perfil</small>
+            </a>
+
+        </nav>
+
+    </main>
+
+    <script src="../scripts/groups.js"></script>
+
+</body>
+</html>

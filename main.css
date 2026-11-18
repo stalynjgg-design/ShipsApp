@@ -1,0 +1,203 @@
+
+/* =================================
+   SHIPSAPP - MAIN STYLES
+================================= */
+
+:root {
+    --bg-primary: #090D18;
+    --bg-secondary: #111827;
+    --bg-card: rgba(255,255,255,0.06);
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #A5AEC0;
+
+    --accent: #7C6CFF;
+    --accent-secondary: #36CFFF;
+
+    --border: rgba(255,255,255,0.12);
+
+    --radius-small: 12px;
+    --radius-medium: 20px;
+    --radius-large: 28px;
+
+    --transition: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.glass {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.glass-button.primary {
+    background: linear-gradient(
+        135deg,
+        var(--accent),
+        var(--accent-secondary)
+    );
+    color: white;
+    border: none;
+}
+
+.glass-button.secondary {
+    background: rgba(255,255,255,0.06);
+}
+
+.glass-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-small);
+    background: rgba(255,255,255,0.06);
+    color: white;
+    outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: var(--accent);
+}
+
+.error-message {
+    color: #FF6B80;
+    font-size: 13px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.icon-button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--bg-card);
+    font-size: 22px;
+}
+
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 5px;
+    background: rgba(9,13,24,0.92);
+    border-top: 1px solid var(--border);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-secondary);
+    font-size: 20px;
+}
+
+.nav-item small {
+    font-size: 11px;
+}
+
+.nav-item.active {
+    color: var(--accent-secondary);
+}
+
+.empty-message,
+.empty-chats,
+.empty-friends,
+.empty-groups {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.empty-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+[hidden] {
+    display: none !important;
+}

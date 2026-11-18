@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090D18">
+
+    <title>Mi perfil - ShipsApp</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/liquid-glass.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+
+    <main class="profile-screen">
+
+        <header class="page-header">
+            <a href="chats.html" class="back-button">←</a>
+            <h1>Mi perfil</h1>
+            <a href="settings.html" class="icon-button">⚙️</a>
+        </header>
+
+        <section class="profile-content">
+
+            <div class="profile-card glass">
+
+                <div class="profile-photo-container">
+
+                    <img
+                        id="profilePhoto"
+                        src="../assets/images/default-avatar.png"
+                        alt="Foto de perfil"
+                    >
+
+                    <label for="changePhoto" class="edit-photo">
+                        📷
+                    </label>
+
+                    <input
+                        type="file"
+                        id="changePhoto"
+                        accept="image/*"
+                        hidden
+                    >
+
+                </div>
+
+                <h2 id="profileName">Tu nombre</h2>
+
+                <p id="profileUsername">@usuario</p>
+
+                <div class="profile-country">
+                    🌎 <span id="profileCountry">Tu país</span>
+                </div>
+
+                <p id="profileStatus">
+                    ¡Hola! Estoy usando ShipsApp.
+                </p>
+
+                <button class="glass-button primary"
+                    id="editProfileButton">
+                    Editar perfil
+                </button>
+
+            </div>
+
+            <div class="profile-options glass">
+
+                <a href="settings.html" class="profile-option">
+                    <span>⚙️</span>
+                    <div>
+                        <strong>Configuración</strong>
+                        <small>Personaliza tu cuenta</small>
+                    </div>
+                    <span>›</span>
+                </a>
+
+                <a href="friends.html" class="profile-option">
+                    <span>👥</span>
+                    <div>
+                        <strong>Mis amigos</strong>
+                        <small>Gestiona tus contactos</small>
+                    </div>
+                    <span>›</span>
+                </a>
+
+                <a href="groups.html" class="profile-option">
+                    <span>🌐</span>
+                    <div>
+                        <strong>Mis grupos</strong>
+                        <small>Consulta tus comunidades</small>
+                    </div>
+                    <span>›</span>
+                </a>
+
+                <button class="profile-option logout-option"
+                    id="logoutButton">
+                    <span>🚪</span>
+                    <div>
+                        <strong>Cerrar sesión</strong>
+                        <small>Salir de ShipsApp</small>
+                    </div>
+                    <span>›</span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <nav class="bottom-navigation">
+
+            <a href="chats.html" class="nav-item">
+                <span>💬</span>
+                <small>Chats</small>
+            </a>
+
+            <a href="friends.html" class="nav-item">
+                <span>👥</span>
+                <small>Amigos</small>
+            </a>
+
+            <a href="groups.html" class="nav-item">
+                <span>🌐</span>
+                <small>Grupos</small>
+            </a>
+
+            <a href="profile.html" class="nav-item active">
+                <span>👤</span>
+                <small>Perfil</small>
+            </a>
+
+        </nav>
+
+    </main>
+
+    <script src="../scripts/profile.js"></script>
+
+</body>
+</html>

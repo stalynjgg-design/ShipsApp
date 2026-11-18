@@ -1,0 +1,17 @@
+
+{
+  "name": "ShipsApp",
+  "short_name": "ShipsApp",
+  "description": "Connect your world",
+  "lang": "es",
+  "start_url": "../frontend/pages/index.html",
+  "scope": "../",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090D18",
+  "theme_color": "#090D18",
+  "categories": [
+    "social",
+    "communication"
+  ]
+}

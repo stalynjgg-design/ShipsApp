@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090D18">
+
+    <title>Chats - ShipsApp</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/liquid-glass.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+
+    <main class="chats-screen">
+
+        <header class="chats-header">
+
+            <div class="brand">
+                <div class="brand-icon">💬</div>
+
+                <div>
+                    <h1>ShipsApp</h1>
+                    <p>Connect your world</p>
+                </div>
+            </div>
+
+            <button class="icon-button" id="newChatButton"
+                aria-label="Nuevo chat">
+                +
+            </button>
+
+        </header>
+
+        <section class="chats-content">
+
+            <div class="chats-title">
+                <h2>Mensajes</h2>
+                <span id="chatCount">0 conversaciones</span>
+            </div>
+
+            <div class="search-box">
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="chatSearch"
+                    placeholder="Buscar conversaciones..."
+                >
+            </div>
+
+            <div class="chat-list" id="chatList">
+
+                <div class="empty-chats" id="emptyChats">
+
+                    <div class="empty-icon">💬</div>
+
+                    <h3>¡Tus chats comienzan aquí!</h3>
+
+                    <p>
+                        Todavía no tienes conversaciones.
+                        Agrega amigos y comienza a hablar.
+                    </p>
+
+                    <button
+                        class="glass-button primary"
+                        id="findFriendsButton">
+                        Buscar amigos
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <nav class="bottom-navigation">
+
+            <a href="chats.html" class="nav-item active">
+                <span>💬</span>
+                <small>Chats</small>
+            </a>
+
+            <a href="friends.html" class="nav-item">
+                <span>👥</span>
+                <small>Amigos</small>
+            </a>
+
+            <a href="groups.html" class="nav-item">
+                <span>🌐</span>
+                <small>Grupos</small>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <span>👤</span>
+                <small>Perfil</small>
+            </a>
+
+        </nav>
+
+    </main>
+
+    <script src="../scripts/chats.js"></script>
+
+</body>
+</html>

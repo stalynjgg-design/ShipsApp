@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090D18">
+
+    <title>Iniciar sesión - ShipsApp</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/liquid-glass.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+
+    <main class="auth-screen">
+
+        <a href="index.html" class="back-button">
+            ← Volver
+        </a>
+
+        <section class="auth-container glass">
+
+            <div class="auth-logo">
+                <span>💬</span>
+            </div>
+
+            <h1>Bienvenido de nuevo</h1>
+
+            <p class="auth-description">
+                Inicia sesión para continuar en ShipsApp.
+            </p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="username">Usuario</label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Tu nombre de usuario"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Tu contraseña"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            aria-label="Mostrar contraseña"
+                        >
+                            👁
+                        </button>
+                    </div>
+                </div>
+
+                <p id="loginError" class="error-message"></p>
+
+                <button type="submit" class="glass-button primary">
+                    Iniciar sesión
+                </button>
+
+            </form>
+
+            <p class="auth-footer">
+                ¿No tienes cuenta?
+                <a href="register.html">Regístrate</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="../scripts/auth.js"></script>
+
+</body>
+</html>
